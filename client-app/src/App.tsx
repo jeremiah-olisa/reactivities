@@ -14,15 +14,13 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="">
       <Header as="h2" icon="users" content="Reactivities" />
-      <header className="App-header">
         <List>
           {activities.map((activity: any) => (
             <List.Item key={activity.id}>{activity.title}</List.Item>
           ))}
         </List>
-      </header>
     </div>
   );
 }
